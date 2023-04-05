@@ -83,7 +83,7 @@ span {
 .wood figcaption {
   display: block;
   background-color: white;
-  padding: 5px;
+  padding: 14px;
 }
 .wood h2{
   font-size: 15px;
@@ -91,9 +91,9 @@ span {
   margin: 5px;
   padding-left: 10px;
 }
-  
+ 
 .figcaption p {
-  line-height: 25px;
+  line-height: 25px; 
 }
 
 .picture {
@@ -157,8 +157,7 @@ span {
 .button {
   background-color: #fff;
   display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px;
+  padding: 10px 14px 10px 10px;  
 }
 
 .popular :hover {
