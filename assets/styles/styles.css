@@ -2,10 +2,9 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f1f1f1;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  max-width: 1400px;
 }
 
 #header {
@@ -19,54 +18,66 @@ span {
   background-color: #000000da;
   color: white;
   padding: 4px;
-  border-radius: 5px;
 }
 
 .container {
-  display: block;
-  margin: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
-  max-width: 90%;
+  max-width: 93vw;
+  overflow: hidden;
 }
 
 #content {
-  width: 100%;
   background-color: #f1f1f1;
   display: grid;
   grid-template-columns: auto auto;
-  gap: 40px;
+  gap: 25px;
 }
 
 .wood {
-  width: 55vw;
+  width: 60vw;
+  margin-bottom: 5px;
 }
 
 .big {
   display: block;
   width: 100%;
-  box-shadow: 3px 3px 5px 4px #53505075;
+  box-shadow: 3px 2px 5px 2px #ece9e9d2;
   margin-top: 1px;
+}
+
+figcaption {
+  box-shadow: 1px 2px 2px 2px #ece9e9d2;
 }
 
 .avatar {
   display: block;
   width: 100%;
-  box-shadow: 3px 3px 5px 4px #53505075;
+  box-shadow: 2px 2px 2px 2px #ece9e9d2;
 }
 
 .adjust {
   display: block;
   width: 100%;
-  margin-bottom: 1px;
 }
 
 .woman {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.right_column {
-  display: block;
-  width: 100%;
+.right-column {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .col-footer1 {
@@ -79,19 +90,23 @@ span {
   flex-direction: column;
 }
 
+.comments span {
+  border-radius: 50%;
+}
+
 .adjust figcaption,
 .wood figcaption {
   display: block;
   background-color: white;
-  padding: 5px;
+  padding: 10px 17px 20px;
 }
-.wood h2{
-  font-size: 15px;
-  font-weight: 200;
+
+.wood h2 {
+  font-size: 25px;
+  font-weight: 400;
   margin: 5px;
-  padding-left: 10px;
 }
-  
+
 .figcaption p {
   line-height: 25px;
 }
@@ -108,7 +123,7 @@ span {
   border-right: #f1f1f1 !important;
   border-top: #f1f1f1 !important;
   width: 100%;
-  box-shadow: 3px 3px 5px 4px #53505075;
+  box-shadow: 3px 2px 2px 2px #ece9e9d2;
   margin-top: 30px;
   padding-top: 16px;
   border: 20px;
@@ -117,11 +132,11 @@ span {
 .post p {
   border-bottom: 1px solid lightgray;
   padding: 8px 16px;
-  padding-top: 5px!important;
-  padding-bottom: 16px!important;
+  padding-top: 5px !important;
+  padding-bottom: 16px !important;
 }
 
-.post h2{
+.post h2 {
   font-size: 15px;
   font-weight: 100;
   margin: 5px;
@@ -142,12 +157,12 @@ span {
   background-color: #f1f1f1;
   border: 1px solid gray;
   width: 100%;
-  box-shadow: 3px 3px 5px 4px #53505075;
+  height: 20vh;
+  box-shadow: 3px 2px 3px 2px #ece9e9d2;
   margin-top: 30px;
-  padding: 0;
 }
 
-.tag h2{
+.tag h2 {
   font-size: 15px;
   font-weight: 150;
   margin: 5px;
@@ -157,28 +172,46 @@ span {
 .button {
   background-color: #fff;
   display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px;
+  padding: 10px 14px 10px 10px;
 }
 
 .popular :hover {
-  background-color:gray;
+  background-color: gray;
   color: #fff;
 }
 
 footer {
   background-color: gray;
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   margin-top: 5vh;
 }
 
-footer button {
+footer .greycolor {
+  height: 3rem;
+  margin: 15px 0;
+  background-color: gray important;
+  color: #808080ea;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
+footer .greycolor:hover {
+  color: azure;
+  background-color: lightgray;
+}
+
+footer .blackcolor {
   height: 3rem;
   margin: 15px 0;
   background-color: black;
   color: white;
   padding: 15px;
+}
+
+footer .blackcolor:hover {
+  color: black;
+  background-color: lightgray;
 }
 
 .tag button {
@@ -202,5 +235,9 @@ footer button {
 
   .wood {
     width: 100%;
+  }
+
+  .tag {
+    height: 30vh;
   }
 }
