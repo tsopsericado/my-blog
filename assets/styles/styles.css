@@ -35,7 +35,7 @@ span {
   background-color: #f1f1f1;
   display: grid;
   grid-template-columns: auto auto;
-  gap: 40px;
+  gap: 30px;
 }
 
 .wood {
@@ -72,7 +72,7 @@ figcaption {
 
 .right-column {
   display: block;
-  width: 100%;
+  width: 95%;
 }
 
 .col-footer1 {
@@ -175,14 +175,14 @@ figcaption {
 footer {
   background-color: gray;
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   margin-top: 5vh;
 }
 
 footer .greycolor {
   height: 3rem;
   margin: 15px 0;
-  background-color: #dbd7d771 important;
+  background-color: gray important;
   color: #808080ea;
   padding: 15px 20px;
   font-size: 15px;
@@ -213,6 +213,7 @@ background-color: lightgray;
 
 .foot {
   margin-left: 30px;
+
 }
 
 @media only screen and (max-width: 768px) {
