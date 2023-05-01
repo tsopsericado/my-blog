@@ -5,7 +5,6 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  max-width: 1400px;
 }
 
 #header {
@@ -19,60 +18,68 @@ span {
   background-color: #000000da;
   color: white;
   padding: 4px;
-  border-radius: 5px;
 }
 
 .container {
-  display: block;
-  margin: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
   justify-content: center;
-  max-width: 100%;
+  max-width: 93vw;
   overflow: hidden;
 }
 
 #content {
-  width: 100%;
   background-color: #f1f1f1;
   display: grid;
   grid-template-columns: auto auto;
-  gap: 30px;
+  gap: 25px;
 }
 
 .wood {
   width: 60vw;
-  /* padding-left: 50px; */
+  margin-bottom: 5px;
 }
 
 .big {
   display: block;
   width: 100%;
-  box-shadow: 3px 3px 5px 4px #53505075;
+  box-shadow: 3px 2px 5px 2px #ece9e9d2;
   margin-top: 1px;
 }
 
 figcaption {
-  box-shadow: 0px 3px 5px 4px #53505075;
+  box-shadow: 0px 2px 2px 2px #ece9e9d2;
 }
 
 .avatar {
   display: block;
   width: 100%;
-  box-shadow: 3px 3px 5px 4px #53505075;
+  box-shadow: 2px 2px 2px 2px #ece9e9d2;
 }
 
 .adjust {
   display: block;
   width: 100%;
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
 }
 
 .woman {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .right-column {
-  display: block;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 95%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .col-footer1 {
@@ -85,18 +92,21 @@ figcaption {
   flex-direction: column;
 }
 
+.comments span {
+  border-radius: 50%;
+}
+
 .adjust figcaption,
 .wood figcaption {
   display: block;
   background-color: white;
-  padding: 14px;
+  padding: 10px 17px 20px 17px;
 }
 
 .wood h2 {
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 25px;
+  font-weight: 400;
   margin: 5px;
-  padding-left: 10px;
 }
 
 .figcaption p {
@@ -115,7 +125,7 @@ figcaption {
   border-right: #f1f1f1 !important;
   border-top: #f1f1f1 !important;
   width: 100%;
-  box-shadow: 3px 3px 5px 4px #53505075;
+  box-shadow: 3px 2px 2px 2px #ece9e9d2;
   margin-top: 30px;
   padding-top: 16px;
   border: 20px;
@@ -149,9 +159,9 @@ figcaption {
   background-color: #f1f1f1;
   border: 1px solid gray;
   width: 100%;
-  box-shadow: 3px 3px 5px 4px #53505075;
+  height: 20vh;
+  box-shadow: 3px 2px 3px 2px #ece9e9d2;
   margin-top: 30px;
-  padding: 0;
 }
 
 .tag h2 {
@@ -188,9 +198,9 @@ footer .greycolor {
   font-size: 15px;
 }
 
-footer .greycolor:hover{
-color: azure;
-background-color: lightgray;
+footer .greycolor:hover {
+  color: azure;
+  background-color: lightgray;
 }
 
 footer .blackcolor {
@@ -201,9 +211,9 @@ footer .blackcolor {
   padding: 15px;
 }
 
-footer .blackcolor:hover{
-color: black;
-background-color: lightgray;
+footer .blackcolor:hover {
+  color: black;
+  background-color: lightgray;
 }
 
 .tag button {
@@ -213,7 +223,6 @@ background-color: lightgray;
 
 .foot {
   margin-left: 30px;
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -229,4 +238,9 @@ background-color: lightgray;
   .wood {
     width: 100%;
   }
+
+  .tag {
+    height: 30vh;
+  }
 }
+
